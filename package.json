@@ -6,22 +6,44 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write --list-different .",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.4.7",
+    "@mui/x-data-grid": "^7.27.3",
+    "axios": "^1.8.3",
+    "date-fns": "^4.1.0",
+    "lucide-react": "^0.482.0",
+    "next": "15.2.2",
+    "numeral": "^2.0.6",
     "react": "^19.0.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "^19.0.0",
-    "next": "15.2.2"
+    "recharts": "^2.15.1"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20.17.24",
+    "@types/numeral": "^2.0.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
+    "@types/uuid": "^10.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.2.2",
-    "@eslint/eslintrc": "^3"
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
