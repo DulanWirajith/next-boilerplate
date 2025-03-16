@@ -95,6 +95,22 @@ In the project directory, you can run the following scripts:
 - **tailwindcss**: A utility-first CSS framework.
 - **typescript**: TypeScript language support for static typing.
 
+### Committing without running pre-commit hook
+
+```
+git commit -m 'commit message' --no-verify
+```
+
+### Committing using commitizen package
+
+commitizen package helps to work with conventional commits
+
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
+```
+git cz
+```
+
 ## Contributing
 
 If you would like to contribute to this project, feel free to fork the repository, create a branch, and submit a pull request. Please make sure to follow the code style guidelines and run the linters before submitting.
